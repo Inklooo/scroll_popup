@@ -8,11 +8,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
-
-
 // Faire apparaitre l'image de la partie improvise
+window.addEventListener("scroll", () =>{
+  if (scrollY >= 200) {
+    imgImprovise.style.opacity = 1
+    imgImprovise.style.transform = "translate(0px)";
+  }
+});
 
 // Faire apparaitre la popup quand on est en bas du site
 
